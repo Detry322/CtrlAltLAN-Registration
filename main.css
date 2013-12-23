@@ -1,0 +1,254 @@
+/*
+
+important colors:
+
+#3c352f (light background)
+#766860 (white selection);
+rgb(42, 39, 37) (dark background)
+*/
+@font-face {
+	font-family: "TF2 Build";
+	src: local("TF2 Build"), url('/tf2build.ttf');
+}
+
+@font-face {
+    font-family: "TF2 Secondary";
+    src: local("TF2 Secondary"), url('/tf2secondary.ttf');
+}
+
+body
+{
+	background-color: rgb(42, 39, 37);
+}
+
+* {
+	margin:0;
+	padding:0;
+} 
+
+html, body {
+	height: 100%;
+}
+
+#wrap {
+	min-height: 100%;
+}
+
+.confiner
+{
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#header
+{
+	height: 130px;
+	background-color: #3c352f;
+	border-bottom: 2px solid #766860;
+}
+
+#main {
+	overflow:auto;
+	padding-bottom: 92px;
+}
+
+.box
+{
+	background-color: #3c352f;
+	border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+}
+
+.dialogLink, .button { /* thank you tf2lobby */
+    background-color: #fbeccb;
+    text-shadow: 0px 0px 1px #fbeccb;
+    color: #776a61;
+    padding: 12px 20px;
+    margin-left: 10px;
+    font-size: 18px;
+    font-family: "TF2 Build";
+    border: none;
+    text-decoration :none;
+    -webkit-border-radius: 6px; 
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.checklist-box
+{
+	text-align: right;
+	height: 79px;
+	border-radius: 5px;
+	background-color: rgba(0,0,0,0.2);
+	margin-top: 15px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	padding-right: 80px;
+}
+
+.checklist-box span
+{
+	font-size: 3em;
+}
+
+.good
+{
+	color: green;
+}
+
+.bad
+{
+	color: red;
+}
+
+.meh
+{
+	color: yellow;
+}
+
+.checklist-box img
+{
+	float: left;
+	margin-left: 80px;
+	border-radius: 5px;
+}
+
+.dialogLink:hover, .button:hover {
+    background-color: #b4510e;
+    text-shadow: 0px 0px 1px #b4510e;
+    color: #2a2725
+}
+
+.generic
+{
+	width: 500px;
+	padding: 30px;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.success
+{
+	width: 500px;
+	padding: 10px;
+	font-family: "TF2 Secondary";
+	background-color: #70c201 !important;
+	text-align: center;
+}
+
+.notification
+{
+	width: 500px;
+	padding: 10px;
+	font-family: "TF2 Secondary";
+	background-color: #F0C000 !important;
+	text-align: center;
+}
+
+.error
+{
+	width: 500px;
+	padding: 10px;
+	font-family: "TF2 Secondary";
+	background-color: #F00000 !important;
+	text-align: center;
+}
+
+#loginbox
+{
+	width: 340px;
+	padding: 30px;
+	color: #fbeccb;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.title
+{
+	font-family: "TF2 Build";
+	color: #fbeccb;
+}
+
+.subtext
+{
+	font-family: "TF2 Secondary";
+	color: #c9bca3;
+}
+
+h1
+{
+	padding-top: 40px;
+	font-family: "TF2 Build";
+	color: #fbeccb;
+}
+
+h2
+{
+	font-family: "TF2 Secondary";
+	color: #c9bca3;
+}
+
+select
+{
+	padding: 2px;
+	display: block;
+	background-color: rgb(42, 39, 37);
+	border: 2px solid #333;
+	color: #fbeccb;
+	font-family: "TF2 Secondary";
+	font-size: 20px;
+	height: 40px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 5px;
+	margin-top: 10px;
+	direction: rtl;
+}
+
+#profile
+{
+	float: right;
+	margin-top: -56px;
+	text-align: right;
+	width: 310px;
+	height: 60px;
+}
+#profile form
+{
+	float: right;
+}
+
+#profile a
+{
+	color: #fbeccb;
+}
+
+#footer {
+	position: relative;
+	margin-top: -92px; /* negative value of footer height */
+	height: 90px;
+	clear:both;
+	background-color: black;
+	border-top: 2px solid #766860;
+	color: #766860;
+	font-family: "TF2 Secondary";
+	text-align: center;
+} 
+
+#footer a
+{
+	color: #fbeccb;
+}
+
+/*Opera Fix*/
+body:before {/* thanks to Maleika (Kohoutec)*/
+content:"";
+height:100%;
+float:left;
+width:0;
+margin-top:-32767px;/* thank you Erik J - negate effect of float*/
+}

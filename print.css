@@ -1,0 +1,61 @@
+@font-face {
+	font-family: "TF2 Build";
+	src: local("TF2 Build"), url('/tf2build.ttf');
+}
+
+@font-face {
+    font-family: "TF2 Secondary";
+    src: local("TF2 Secondary"), url('/tf2secondary.ttf');
+}
+
+h1
+{
+	font-family: "TF2 Build";
+	text-align: center;
+	margin-bottom: -5px;
+}
+
+h2
+{
+	margin-top: -5px;
+	font-family: "TF2 Secondary";
+	text-align: center;
+}
+#profilepic
+{
+	border: solid 4px rgb(142,202,254);
+	border-radius: 5px;
+	float: left;
+	margin-left: 20px;
+	margin-top: 10px; 
+	margin-bottom: 15px;
+	margin-right: 10px;
+	width: 107px;
+	height: 107px;
+}
+#qrcode
+{
+	float: right;
+	margin-right: 20px;
+}
+body p
+{
+	text-align: center;
+	font-family: "TF2 Secondary";
+	font-size: 1.5em; 
+}
+body
+{
+	font-family: "TF2 Secondary";
+	font-size: 0.9em;
+}
+body ol
+{
+	font-size: 0.8em;
+	font-family: "Trebuchet MS", Helvetica
+}
+#legal
+{
+	font-family: serif;
+	font-size: 0.5em;
+}
